@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()){
                 case R.id.imgTop:
+                    finish();
                     break;
             }
         }

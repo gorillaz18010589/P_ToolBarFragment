@@ -1,5 +1,6 @@
 package com.example.p_toolbarfragment.main;
-
+//start的Fragment才開始fragmentTransaction.addToBackStack("");這頁叫0,之後每addToBackStack的頁面會加1以此類推
+//要顯示改變tittle在各自頁面的OnViewCreate
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -60,7 +61,7 @@ public class StartFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        tvTitle.setText("開始");
+        tvTitle.setText("start");
         fragmentStartBinding.btn1.setOnClickListener(onClickListener);
         fragmentStartBinding.btn2.setOnClickListener(onClickListener);
     }
@@ -77,7 +78,14 @@ public class StartFragment extends Fragment {
                     setFragment(secondFragment);
                     break;
                 case R.id.imgTop:
-                    getFragmentManager().popBackStack();
+                  int  backStackEntryCount = getFragmentManager().getBackStackEntryCount();
+                  if(backStackEntryCount == 0){
+                      getActivity().finish();
+                      Log.v("hank","Start ->getBackStackEntryCount:" + backStackEntryCount);
+                  }else{
+                      Log.v("hank","Start ->getBackStackEntryCount:" + backStackEntryCount);
+                      getFragmentManager().popBackStack();
+                  };
                     break;
             }
         }
