@@ -43,7 +43,7 @@ public class StartFragment extends Fragment {
     @Override
     public void onStart() {
         super.onStart();
-        EventBus.getDefault().register(getActivity());
+
 
     }
 
