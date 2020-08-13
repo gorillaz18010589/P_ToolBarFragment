@@ -38,6 +38,7 @@ public class StartFragment extends Fragment {
         imgTop = getActivity().findViewById(R.id.imgTop);
         imgTop.setOnClickListener(onClickListener);
         tvTitle =  getActivity().findViewById(R.id.tvTitle);
+
     }
 
     @Override
@@ -59,6 +60,7 @@ public class StartFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        tvTitle.setText("開始");
         fragmentStartBinding.btn1.setOnClickListener(onClickListener);
         fragmentStartBinding.btn2.setOnClickListener(onClickListener);
     }

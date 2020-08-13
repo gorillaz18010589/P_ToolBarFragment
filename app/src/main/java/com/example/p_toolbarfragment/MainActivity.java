@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private void init() {
         imgTop = findViewById(R.id.imgTop);
         tvTitle = findViewById(R.id.tvTitle);
+        tvTitle.setText("ＭainActivitty");
 
         imgTop.setOnClickListener(onClickListener);
     }
