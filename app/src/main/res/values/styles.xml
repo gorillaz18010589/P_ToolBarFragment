@@ -8,4 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="textViewTwelvedodgerBlue" parent="@android:style/Widget.TextView">
+    <item name="android:textSize">12sp</item>
+    <item name="android:textColor">@color/money_btn_txt</item>
+    </style>
+
+    <style name="textViewElevenBlack" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/color15</item>
+    </style>
+
 </resources>

@@ -3,12 +3,14 @@ package com.example.p_toolbarfragment;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.p_toolbarfragment.main.StartFragment;
+import com.example.p_toolbarfragment.tabfragment.TabActivity;
 
 import de.greenrobot.event.EventBus;
 
@@ -51,4 +53,11 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.add(R.id.frameContiner,startFragment);
         fragmentTransaction.commit();
     }
+
+    public void toTabActivity(View view) {
+        startActivity(new Intent(MainActivity.this, TabActivity.class));
+
+    }
+
+
 }

@@ -16,7 +16,7 @@
         <ImageView
             android:id="@+id/imgTop"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="60dp"
             android:src="@drawable/ic_launcher_background" />
 
 
@@ -27,7 +27,34 @@
             android:text="tvTitle" />
 
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="toTabActivity"
+            android:text="toTabActivity"
+            />
+
+
     </LinearLayout>
+
+    <com.example.borderrelativelayout.BorderLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        app:needCenterBorder="true"
+        app:needBottomBorder="true"
+app:layout_constraintTop_toBottomOf="@+id/linTopBar"
+        >
+
+        <TextView
+            android:text="e3r3r3r3r3r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </com.example.borderrelativelayout.BorderLinearLayout>
 
 
     <FrameLayout
@@ -37,6 +64,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linTopBar" />
+        app:layout_constraintTop_toBottomOf="@+id/linTopBar"
+        app:layout_constraintHeight_percent="0.5"
+
+        />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

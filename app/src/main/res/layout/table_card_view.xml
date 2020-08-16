@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+        <data>
+
+                <import type="android.view.View" />
+
+                <variable
+                    name="message"
+                    type="com.example.p_toolbarfragment.Message" />
+
+
+        </data>
+        <com.meetsl.scardview.SCardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:cardShadowEndColor="@color/colorPrimary"
+            >
+
+
+
+                <com.example.borderrelativelayout.BorderRelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:borderStrokeWidth="1.0"
+                    android:padding="20dp"
+                    app:needCenterBorder="true"
+                    app:needBottomBorder="true"
+                    app:needTopBorder="false"
+                    >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="dwdwdsdwdw"
+                            />
+
+
+
+                </com.example.borderrelativelayout.BorderRelativeLayout>
+
+
+
+
+        </com.meetsl.scardview.SCardView>
+
+
+</layout>
+
+
+<!--<LinearLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="wrap_content"-->
+<!--app:layout_constraintTop_toTopOf="parent"-->
+<!--android:orientation="horizontal">-->
+
+
+<!--<com.example.borderrelativelayout.BorderRelativeLayout-->
+<!--    android:layout_weight="1"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    app:needBottomBorder="true"-->
+<!--    app:needRightBorder="true"-->
+<!--    app:borderStrokeWidth="1dp"-->
+<!--    android:padding="20dp"-->
+
+<!--    >-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvBarTitle1"-->
+<!--        style="@style/textViewTwelvedodgerBlue"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:text="莊家"-->
+<!--        />-->
+
+<!--</com.example.borderrelativelayout.BorderRelativeLayout>-->
+
+<!--<com.example.borderrelativelayout.BorderRelativeLayout-->
+<!--    android:layout_weight="1"-->
+<!--    android:layout_width="0dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    app:needBottomBorder="true"-->
+<!--    app:borderStrokeWidth="1dp"-->
+<!--    android:padding="20dp"-->
+<!--    >-->
+
+
+<!--    <TextView-->
+<!--        android:id="@+id/tvBarTitle2"-->
+<!--        style="@style/textViewTwelvedodgerBlue"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="莊家"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        />-->
+
+<!--</com.example.borderrelativelayout.BorderRelativeLayout>-->
+
+<!--</LinearLayout>-->
